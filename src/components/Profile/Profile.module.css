@@ -1,0 +1,34 @@
+.profile_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_box img.mobile {
+  display: none;
+}
+
+.profile_id {
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+}
+
+.profile_id img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.profile_id h5 {
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .profile_box img.mobile {
+    display: block;
+  }
+  .profile_box img.desktop {
+    display: none;
+  }
+}
